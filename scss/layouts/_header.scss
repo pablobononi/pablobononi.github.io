@@ -1,0 +1,16 @@
+header{
+    .graf{
+        letter-spacing: 2px;
+    }
+    .flex{
+        @include flex-row-justify(end);
+    
+    }
+    .letHea{
+        font-family: map-get($fuentes, secundaria);
+    }
+    .solapas{
+        background-color:  $colorPrincipal;
+    }
+}  
+

@@ -1,0 +1,41 @@
+
+main{
+    .imgcontenedor__flex{
+        @include flex-row-justify(center);
+        flex-wrap: wrap;
+        margin-top: 7%;
+        margin-bottom: 4%;
+    }
+    .imgcontenedor img{
+        border-radius: $border-radius;
+        border: $border;
+        object-fit: cover;
+        margin: 1px;
+        
+    }
+    .dosbotones{
+        @include flex-row-justify(center);
+        button{
+            background-color: $colorPrincipal;
+            background-repeat:no-repeat;
+            border: $border;
+            border-radius: $border-radius;
+            overflow: hidden;
+            outline:none;
+            padding: 5px;
+            margin: 5px;
+            width: 200px;   
+        }
+        a{
+            font-family: map-get($fuentes, principal);
+            font-weight: bold;
+            color: black;
+            text-decoration: none;
+            font-size: medium;
+        }
+    }
+}
+
+
+    
+

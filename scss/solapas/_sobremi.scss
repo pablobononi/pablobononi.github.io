@@ -1,0 +1,17 @@
+main{
+    .sobremifondo{
+        background-color: #cdb4db;
+        font-family: map-get($fuentes, principal);
+        border-radius: $border-radius;
+        border: $border;
+        color: black;
+        letter-spacing: 2px;
+        .carruimg{
+            height: 500px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+    }
+    
+}
+

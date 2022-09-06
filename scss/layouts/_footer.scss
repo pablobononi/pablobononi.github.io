@@ -1,0 +1,18 @@
+footer{
+    h4{
+        font-family: map-get($fuentes, secundaria); 
+    }
+    address{
+        font-family: map-get($fuentes, secundaria); 
+    }
+    grid-area: footer;
+    color: black;
+    background-color: $colorPrincipal; 
+    .footer__div{
+        a{
+            position:fixed;
+            bottom: 6%;	
+            right: 6%;
+        }
+    }
+}

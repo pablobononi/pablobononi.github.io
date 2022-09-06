@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
+  background-color: #e3d5ca; }
+
+header .graf {
+  letter-spacing: 2px; }
+
+header .flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: end; }
+
+header .letHea {
+  font-family: "Roboto", sans-serif; }
+
+header .solapas {
+  background-color: #cdb4db; }
+
+main {
+  height: 100%;
+  background-image: url("../images/fondo1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+footer {
+  grid-area: footer;
+  color: black;
+  background-color: #cdb4db; }
+  footer h4 {
+    font-family: "Roboto", sans-serif; }
+  footer address {
+    font-family: "Roboto", sans-serif; }
+  footer .footer__div a {
+    position: fixed;
+    bottom: 6%;
+    right: 6%; }
+
+main .imgcontenedor__flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 7%;
+  margin-bottom: 4%; }
+
+main .imgcontenedor img {
+  border-radius: 1cm;
+  border: 2px solid black;
+  object-fit: cover;
+  margin: 1px; }
+
+main .dosbotones {
+  display: flex;
+  flex-direction: row;
+  justify-content: center; }
+  main .dosbotones button {
+    background-color: #cdb4db;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    border-radius: 1cm;
+    overflow: hidden;
+    outline: none;
+    padding: 5px;
+    margin: 5px;
+    width: 200px; }
+  main .dosbotones a {
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-size: medium; }
+
+main .sobremifondo {
+  background-color: #cdb4db;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1cm;
+  border: 2px solid black;
+  color: black;
+  letter-spacing: 2px; }
+  main .sobremifondo .carruimg {
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px; }
+
+main .galeriacontenedor__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 600px;
+  gap: 2px;
+  padding: 5% 10% 5% 10%; }
+  main .galeriacontenedor__grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1cm; }
+  main .galeriacontenedor__grid .galeria_img:nth-child(1) {
+    grid-column-start: span 2; }
+  main .galeriacontenedor__grid .galeria_img:nth-child(4) {
+    grid-column-start: span 2; }
+  main .galeriacontenedor__grid .galeria_img:nth-child(9) {
+    grid-column-end: span 2; }
+
+main .pedido, main .contactame {
+  background-color: #cdb4db;
+  font-family: "Poppins", sans-serif;
+  border-radius: 1cm;
+  border: 2px solid black;
+  color: black;
+  letter-spacing: 2px; }
+
+.rotate-center {
+  -webkit-animation: rotate-center 0.6s ease-in-out both;
+  animation: rotate-center 0.6s ease-in-out both; }
+
+@-webkit-keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+@keyframes rotate-center {
+  0% {
+    -webkit-transform: rotate(0);
+    transform: rotate(0); }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg); } }
+
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both; }
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0; }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1; } }
+
+@media screen and (min-width: 300px) and (max-width: 550px) {
+  body {
+    background-color: #e3d5ca; }
+  header .flex {
+    justify-content: center; }
+  header .navnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main .combo1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  main .imgcontenedor__flex img {
+    height: 350px;
+    width: 250px; }
+  main .dosbotones button {
+    padding: 3px;
+    margin: 5px;
+    width: 100px; }
+  main .dosbotones a {
+    font-size: small; }
+  main .sobremifondo .carruimg {
+    height: 350px; }
+  main .galeriacontenedor__grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 250px;
+    padding: 5% 0% 5% 5%; }
+  .footer address {
+    font-size: small;
+    font-weight: bolder; } }
+
+@media screen and (min-width: 551px) and (max-width: 767px) {
+  body {
+    background-color: #e3d5ca; }
+  header .flex {
+    justify-content: center; }
+  main .imgcontenedor__flex img {
+    height: 350px;
+    width: 250px; } }
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  body {
+    background-color: #e3d5ca; }
+  header .flex {
+    justify-content: center; }
+  main .imgcontenedor__flex img {
+    height: 350px;
+    width: 250px; }
+  main .sobremifondo .carruimg {
+    height: 450px; } }

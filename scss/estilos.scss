@@ -1,0 +1,28 @@
+@import "./utilities/variables";
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&family=Roboto:wght@100&display=swap');
+
+@import "./utilities/mixin";
+@import "./utilities/maps";
+
+@import "./layouts/reset";
+@import "./layouts/body";
+@import "./layouts/header";
+@import "./layouts/main";
+@import "./layouts/footer";
+
+
+@import "./solapas/index";
+@import "./solapas/sobremi";
+@import "./solapas/galeria";
+@import "./solapas/pedidos";
+@import "./solapas/contacto";
+
+
+@import "./animaciones";
+@import "./mq/mediaqueries";
+
+
+
+
+ 
